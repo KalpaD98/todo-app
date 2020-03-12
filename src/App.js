@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 //function Component
@@ -20,12 +19,22 @@ function SComponent() {
   );
 }
 
+function TComponent() {
+    return (
+        <div className="SComponent">
+            <h2>TComponent</h2>
+            <p>My age is 21</p>
+        </div>
+    );
+}
+
 function App() {
   return (
       <div className="App">
         <h1>Hello World</h1>
-        <FirstComponent/>
-        <SComponent/>
+          <FirstComponent></FirstComponent>
+          <SComponent> </SComponent>
+          <TComponent></TComponent>
       </div>
   );
 }
