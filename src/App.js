@@ -2,24 +2,31 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+//function Component
+function FirstComponent() {
+  return (
+      <div className="FirstComponent">
+        <h1>First Component</h1>
+      </div>
+  );
+}
+
+function SComponent() {
+  return (
+      <div className="SComponent">
+        <h2>S Component</h2>
+        <p>My name is Kalpa</p>
+      </div>
+  );
+}
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="App">
+        <h1>Hello World</h1>
+        <FirstComponent/>
+        <SComponent/>
+      </div>
   );
 }
 
