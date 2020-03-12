@@ -1,15 +1,8 @@
 import React from 'react';
+import FirstComponent from './components/learning-examples/FirstComponent';
 import './App.css';
 
 //function Component
-function FirstComponent() {
-  return (
-      <div className="FirstComponent">
-        <h1>First Component</h1>
-      </div>
-  );
-}
-
 function SComponent() {
   return (
       <div className="SComponent">
